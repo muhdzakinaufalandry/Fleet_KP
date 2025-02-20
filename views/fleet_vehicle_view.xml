@@ -153,6 +153,9 @@
             </xpath>
 
             <xpath expr="//field[@name='model_id']" position="before">
+                <field name="branch_name" readonly="1"/>
+                <field name="license_plate" readonly="1"/>
+                <field name="engine_number" readonly="1"/>
                 <field name="brand_id" readonly="1"/>
             </xpath>
 
@@ -164,7 +167,6 @@
                 <field name="type" readonly="1"/>
                 <field name="transmission" readonly="1"/>
                 <field name="engine_capacity" readonly="1"/>
-                
             </xpath>
 
              <xpath expr="//field[@name='acquisition_date']" position="attributes">
