@@ -1,0 +1,99 @@
+<odoo>
+    <data>
+        <record id="model_BEX" model="fleet.status.unit">
+          <field name="kd_stss">BEX</field>
+          <field name="name">UNIT BUFFER LUAR CABANG</field>
+        </record>
+
+        <record id="model_BIN" model="fleet.status.unit">
+          <field name="kd_stss">BIN</field>
+          <field name="name">UNIT BUFFER CABANG</field>
+        </record>
+
+        <record id="model_COP" model="fleet.status.unit">
+          <field name="kd_stss">COP</field>
+          <field name="name">UNIT CAR OWNERSHIP PROGRAM</field>
+        </record>
+
+        <record id="model_DIS" model="fleet.status.unit">
+          <field name="kd_stss">DIS</field>
+          <field name="name">UNIT DISPOSAL</field>
+        </record>
+
+        <record id="model_FREE" model="fleet.status.unit">
+          <field name="kd_stss">FREE</field>
+          <field name="name">UNIT FREE</field>
+        </record>
+
+        <record id="model_GRAB" model="fleet.status.unit">
+          <field name="kd_stss">GRAB</field>
+          <field name="name">UNIT GRAB CAR</field>
+        </record>
+
+        <record id="model_LOG" model="fleet.status.unit">
+          <field name="kd_stss">LOG</field>
+          <field name="name">UNIT LOGISTIK</field>
+        </record>
+
+        <record id="model_MIN" model="fleet.status.unit">
+          <field name="kd_stss">MIN</field>
+          <field name="name">UNIT RENCANA MUTASI</field>
+        </record>
+
+        <record id="model_MUT" model="fleet.status.unit">
+          <field name="kd_stss">MUT</field>
+          <field name="name">UNIT MUTASI KELUAR</field>
+        </record>
+
+        <record id="model_NEW" model="fleet.status.unit">
+          <field name="kd_stss">NEW</field>
+          <field name="name">UNIT BARU</field>
+        </record>
+
+        <record id="model_OPEX" model="fleet.status.unit">
+          <field name="kd_stss">OPEX</field>
+          <field name="name">UNIT OPERASIONAL LUAR CABANG</field>
+        </record>
+
+        <record id="model_OPIN" model="fleet.status.unit">
+          <field name="kd_stss">OPIN</field>
+          <field name="name">UNIT OPERASIONAL CABANG</field>
+        </record>
+
+        <record id="model_PEX" model="fleet.status.unit">
+          <field name="kd_stss">PEX</field>
+          <field name="name">UNIT PERBAIKAN BENGKEL LUAR</field>
+        </record>
+
+        <record id="model_PIN" model="fleet.status.unit">
+          <field name="kd_stss">PIN</field>
+          <field name="name">UNIT PERBAIKAN CABANG</field>
+        </record>
+
+        <record id="model_UPLS" model="fleet.status.unit">
+          <field name="kd_stss">PLS</field>
+          <field name="name">UNIT POOL SITE</field>
+        </record>
+
+        <record id="model_ROP" model="fleet.status.unit">
+          <field name="kd_stss">ROP</field>
+          <field name="name">UNIT RENTAL OWNERSHIP PROGRAM</field>
+        </record>
+
+        <record id="model_TTP" model="fleet.status.unit">
+          <field name="kd_stss">TTP</field>
+          <field name="name">UNIT TITPAN</field>
+        </record>
+
+        <record id="model_UGS" model="fleet.status.unit">
+          <field name="kd_stss">UGS</field>
+          <field name="name">UNIT GANTI SEMENTARA</field>
+        </record>
+
+        <record id="model_UIC" model="fleet.status.unit">
+          <field name="kd_stss">UIC</field>
+          <field name="name">UNIT IN CONTRACT</field>
+        </record>
+
+    </data>
+</odoo>

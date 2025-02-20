@@ -1,0 +1,52 @@
+<odoo>
+    <data>  
+
+        
+        <!-- Action -->
+        <record id="action_fleet_asuransi" model="ir.actions.act_window">
+            <field name="name">Insurance</field>
+            <field name="res_model">fleet.asuransi</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- <record id="menu_fleet_insurance" model="ir.ui.menu">
+            <field name="name">Insurance</field>
+            <field name="parent_id" ref="fleet.menu_root"/>
+            <field name="action" ref="action_fleet_asuransi"/>
+        </record> -->
+
+
+         <!-- Tree View -->
+        <record id="view_fleet_asuransi_tree" model="ir.ui.view">
+            <field name="name">fleet.asuransi.tree</field>
+            <field name="model">fleet.asuransi</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="fleet_id"/>
+                    <field name="start_date" string="Start Date"/>
+                    <field name="end_date" string="End Date"/>
+                    <field name="status" string="Status"/>
+                </tree>
+            </field>
+        </record>
+
+         <!-- Form View -->
+        <record id="view_fleet_asuransi_form" model="ir.ui.view">
+            <field name="name">fleet.asuransi.form</field>
+            <field name="model">fleet.asuransi</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="fleet_id"/>
+                            <field name="start_date" string="Start Date"/>
+                            <field name="end_date" string="End Date"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        
+    </data>
+</odoo>

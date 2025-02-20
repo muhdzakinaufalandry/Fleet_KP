@@ -1,0 +1,59 @@
+<odoo>
+    <data>
+    <!-- Form View -->
+    <record id="view_vehicle_model_form_inherit" model="ir.ui.view">
+        <field name="name">fleet.vehicle.model.form.inherit</field>
+        <field name="model">fleet.vehicle.model</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_model_view_form"/>
+        <field name="arch" type="xml">
+            <!-- =========================================ADDING===================================================== -->
+            <xpath expr="//field[@name='model_year']" position="attributes">
+                <attribute name="string">Year</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='brand_id']" position="attributes">
+                <attribute name="string">Brand</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='vehicle_type']" position="attributes">
+                <attribute name="string">Category</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='category_id']" position="attributes">
+                <attribute name="string">Class</attribute>
+            </xpath>
+
+            <!-- =========================================REMOVE===================================================== -->
+
+            <xpath expr="//page[@name='information']" position="replace">
+            </xpath>
+
+            <xpath expr="//page[@name='vendors']" position="replace">
+            </xpath>
+            
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_vehicle_model_tree_inherit" model="ir.ui.view">
+        <field name="name">fleet.vehicle.model.tree.inherit</field>
+        <field name="model">fleet.vehicle.model</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_model_view_tree"/>
+        <field name="arch" type="xml">
+            <!-- =========================================ADDING===================================================== -->
+
+
+            <xpath expr="//field[@name='brand_id']" position="attributes">
+                <attribute name="string">Brand</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='vehicle_type']" position="attributes">
+                <attribute name="string">Type</attribute>
+            </xpath>
+
+            <!-- =========================================REMOVE===================================================== -->
+            
+        </field>        
+    </record>
+  </data>
+</odoo>

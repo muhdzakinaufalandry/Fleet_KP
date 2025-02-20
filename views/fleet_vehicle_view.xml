@@ -1,0 +1,206 @@
+<odoo>
+  <data>
+    <!-- Form View -->
+    <record id="view_vehicle_form_inherit" model="ir.ui.view">
+        <field name="name">fleet.vehicle.form.inherit</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+        <field name="arch" type="xml">
+
+            <!-- =========================================ADDING===================================================== -->
+
+            <!-- <xpath expr="//form//sheet//div[2]//label[1]" position="replace">
+            </xpath> -->
+
+            <xpath expr="//form//sheet//group//group[1]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//button[@name='open_assignation_logs']" position="replace"/>            
+
+            <xpath expr="//form//sheet//group//group[2]" position="after">
+                <group string="Insurance">
+                        <group>
+                            <field name="pic_name"/>
+                            <field name="pic_number"/>
+                            <field name="provider_name"/>
+                        </group>
+                        <group>
+                            <field name="date_start"/>
+                            <field name="date_end"/>
+                            <field name="statuss"/>
+                        </group>
+                </group>
+            </xpath>
+
+            <xpath expr="//field[@name='model_year']" position="attributes">
+                <attribute name="string">Year</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='license_plate']" position="attributes">
+                <attribute name="placeholder">e.g. DD 2004 XY</attribute>
+            </xpath>
+
+            <xpath expr="//page[@name='page_model']/group/group[2]" position="attributes">
+                <attribute name="placeholder">1</attribute>
+            </xpath>
+
+            <xpath expr="//form//sheet//group//group[2]" position="attributes">
+                <attribute name="colspan">4</attribute>
+            </xpath>
+
+            <xpath expr="//form//sheet//group//group[2]" position="inside">
+                
+                    <group>
+                        <field name="brand_id"/>
+                        <field name="type"/>
+                        <field name="category_id" string="Class"/>
+                        <field name="vehicle_type" string="Category"/>
+                        <field name="vin_sn"/>
+                        <field name="engine_number"/>
+                        <field name="hul_number"/>
+                        <field name="model_year"/>
+                        <field name="transmission"/>
+                        <field name="engine_capacity"/>
+                    </group>
+                    <group>
+                        <field name="color"/>
+                        <field name="fuel_type"/>
+                        <label for="odometer"/>
+                         <div class="o_row o_hr_narrow_field">
+                            <field name="odometer"/>
+                            <field name="odometer_unit"/>
+                        </div>
+                        <field name="OTR"/>
+                        <field name="location"/>
+                        <field name="status_unit"/>
+                        <field name="status_physical"/>
+                        <field name="active"/>
+                    </group>
+                    
+                
+            </xpath>
+
+             <xpath expr="//field[@name='model_id']" position="after">
+                <label for="branch_name"/>
+                    <h2>
+                        <field name="branch_name" placeholder="e.g. Company"/>
+                    </h2>
+            </xpath>
+
+            <!-- =========================================REMOVE===================================================== -->
+
+            <xpath expr="//page[@name='page_tax_info']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='order_date']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='category_id']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='vin_sn']" position="replace">
+            </xpath>
+
+             <xpath expr="//field[@name='location']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='acquisition_date']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='write_off_date']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='manager_id']" position="replace">
+            </xpath>
+
+            <xpath expr="//label[@for='tag_ids']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='tag_ids']" position="replace">
+            </xpath>
+
+            <xpath expr="//div[@name='button_box']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='state_id']" position="replace">
+            </xpath>
+
+            <xpath expr="//label[@for='odometer']" position="replace">
+            </xpath>
+
+            <xpath expr="//div[@class='o_row o_hr_narrow_field']" position="replace">
+            </xpath>
+
+            <xpath expr="//page[@name='page_model']" position="replace">
+            </xpath>
+
+
+        </field> 
+    </record>
+
+    <record id="view_vehicle_tree_inherit" model="ir.ui.view">
+        <field name="name">fleet.vehicle.tree.inherit</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_tree"/>
+        <field name="arch" type="xml">
+
+            <!-- =========================================ADDING===================================================== -->
+            <xpath expr="//field[@name='vin_sn']" position="after">
+                <field name="engine_number" readonly="1" optional="hide"/>
+                <field name="status_unit" readonly="1" optional="hide"/>
+                <field name="status_physical" readonly="1" optional="hide"/>
+            </xpath>
+
+            <xpath expr="//field[@name='model_id']" position="before">
+                <field name="brand_id" readonly="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='model_id']" position="replace">
+                <field name="model_name" readonly="1" string="Model"/>
+            </xpath>
+
+             <xpath expr="//field[@name='category_id']" position="after">
+                <field name="type" readonly="1"/>
+                <field name="transmission" readonly="1"/>
+                <field name="engine_capacity" readonly="1"/>
+                
+            </xpath>
+
+             <xpath expr="//field[@name='acquisition_date']" position="attributes">
+               <attribute name="optional">hide</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='license_plate']" position="attributes">
+               <attribute name="optional">hide</attribute>
+            </xpath>
+
+            <!-- =========================================REMOVE===================================================== -->
+            <xpath expr="//field[@name='tag_ids']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='driver_id']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='future_driver_id']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='co2']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='state_id']" position="replace">
+            </xpath>
+
+            <xpath expr="//field[@name='manager_id']" position="replace">
+            </xpath>
+        </field>
+    </record>
+
+    <record id="fleet_vehicle_action" model="ir.actions.act_window">
+        <field name="name">Vehicles</field>
+        <field name="res_model">fleet.vehicle</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

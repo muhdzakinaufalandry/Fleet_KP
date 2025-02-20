@@ -1,0 +1,95 @@
+<odoo>
+    <data>
+        <record id="model_HO" model="fleet.status.physical">
+          <field name="kd_sts">HO</field>
+          <field name="name">HEAD OFFICE</field>
+        </record>
+
+        <record id="model_CAB" model="fleet.status.physical">
+          <field name="kd_sts">CAB</field>
+          <field name="name">CABANG</field>
+        </record>
+
+        <record id="model_CUS" model="fleet.status.physical">
+          <field name="kd_sts">CUS</field>
+          <field name="name">CUSTOMER</field>
+        </record>
+
+        <record id="model_PLS" model="fleet.status.physical">
+          <field name="kd_sts">PLS</field>
+          <field name="name">POOL SITE</field>
+        </record>
+
+        <record id="model_BKL" model="fleet.status.physical">
+          <field name="kd_sts">BKL</field>
+          <field name="name">BENGKEL</field>
+        </record>
+
+        <record id="model_EKS" model="fleet.status.physical">
+          <field name="kd_sts">EKS</field>
+          <field name="name">EKSPEDISI</field>
+        </record>
+
+        <record id="model_LLG" model="fleet.status.physical">
+          <field name="kd_sts">LLG</field>
+          <field name="name">LELANG</field>
+        </record>
+
+        <record id="model_DLR" model="fleet.status.physical">
+          <field name="kd_sts">DLR</field>
+          <field name="name">DEALER</field>
+        </record>
+
+        <record id="model_RP" model="fleet.status.physical">
+          <field name="kd_sts">RP</field>
+          <field name="name">RELAY POINT</field>
+        </record>
+
+        <record id="model_LOST" model="fleet.status.physical">
+          <field name="kd_sts">LOST</field>
+          <field name="name">HILANG</field>
+        </record>
+
+        <record id="model_BKLC" model="fleet.status.physical">
+          <field name="kd_sts">BKLC</field>
+          <field name="name">BENGKEL CABANG</field>
+        </record>
+
+        <record id="model_BKLP" model="fleet.status.physical">
+          <field name="kd_sts">BKLP</field>
+          <field name="name">BENGKEL POOL SITE</field>
+        </record>
+
+        <record id="model_BASR" model="fleet.status.physical">
+          <field name="kd_sts">BASR</field>
+          <field name="name">BENGKEL ASURANSI</field>
+        </record>
+
+        <record id="model_BAXT" model="fleet.status.physical">
+          <field name="kd_sts">BAXT</field>
+          <field name="name">BENGKEL EKSTERNAL</field>
+        </record>
+
+        <record id="model_BKRS" model="fleet.status.physical">
+          <field name="kd_sts">BKRS</field>
+          <field name="name">BENGKEL KAROSERI</field>
+        </record>
+
+        <record id="model_YART" model="fleet.status.physical">
+          <field name="kd_sts">YART</field>
+          <field name="name">STOCK YARD KIMIA</field>
+        </record>
+
+        <record id="model_BKLH" model="fleet.status.physical">
+          <field name="kd_sts">BKLH</field>
+          <field name="name">BENGKEL HEAVY</field>
+        </record>
+
+        <record id="model_PROJ" model="fleet.status.physical">
+          <field name="kd_sts">PROJ</field>
+          <field name="name">LOKASI PROJECT</field>
+        </record>
+
+
+    </data>
+</odoo>

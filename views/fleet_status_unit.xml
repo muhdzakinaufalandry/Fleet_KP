@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+
+        <!-- Action -->
+        <record id="action_fleet_status_unit" model="ir.actions.act_window">
+            <field name="name">Status Unit</field>
+            <field name="res_model">fleet.status.unit</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <record id="menu_fleet_status_unit" model="ir.ui.menu">
+            <field name="name">Unit</field>
+            <field name="parent_id" ref="menu_fleet_status"/>
+            <field name="action" ref="action_fleet_status_unit"/>
+        </record>
+
+        <!-- Tree View -->
+
+        <record id="view_fleet_status_unit_tree" model="ir.ui.view">
+            <field name="name">fleet.status.unit.tree</field>
+            <field name="model">fleet.status.unit</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="kd_stss"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

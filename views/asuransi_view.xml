@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+
+        <!-- Action -->
+        <record id="action_asuransi" model="ir.actions.act_window">
+            <field name="name">Insurance</field>
+            <field name="res_model">asuransi</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="menu_asuransi" model="ir.ui.menu">
+            <field name="name">Insurance</field>
+            <field name="parent_id" ref="fleet.menu_root"/>
+            <field name="action" ref="action_asuransi"/>
+        </record>
+
+         <!-- Tree View -->
+        <record id="view_asuransi_tree" model="ir.ui.view">
+            <field name="name">asuransi.tree</field>
+            <field name="model">asuransi</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="provider"/>
+                </tree>
+            </field>
+        </record>
+
+         <!-- Form View -->
+        <record id="view_asuransi_form" model="ir.ui.view">
+            <field name="name">asuransi.form</field>
+            <field name="model">asuransi</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="provider"/>
+                            <field name="pic_phone"/>
+                            <field name="pic"/>
+                            <field name="provider_address"/>
+                            <field name="provider_phone"/>
+                            <field name="fleet_insurance_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

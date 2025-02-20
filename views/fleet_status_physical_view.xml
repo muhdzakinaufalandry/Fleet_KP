@@ -1,0 +1,36 @@
+<odoo>
+    <data>  
+
+        <!-- Action -->
+        <record id="action_fleet_status_physical" model="ir.actions.act_window">
+            <field name="name">Status Physical</field>
+            <field name="res_model">fleet.status.physical</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <record id="menu_fleet_status" model="ir.ui.menu">
+            <field name="name">Status</field>
+            <field name="parent_id" ref="fleet.fleet_configuration"/>
+        </record>
+
+        <record id="menu_fleet_status_physical" model="ir.ui.menu">
+            <field name="name">Physical</field>
+            <field name="parent_id" ref="menu_fleet_status"/>
+            <field name="action" ref="action_fleet_status_physical"/>
+        </record>
+
+        <!-- Tree View -->
+
+        <record id="view_fleet_status_physical_tree" model="ir.ui.view">
+            <field name="name">fleet.status.physical.tree</field>
+            <field name="model">fleet.status.physical</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="kd_sts"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        
+    </data>
+</odoo>
