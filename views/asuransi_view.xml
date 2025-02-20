@@ -33,11 +33,15 @@
                 <form>
                     <sheet>
                         <group>
-                            <field name="provider"/>
-                            <field name="pic_phone"/>
-                            <field name="pic"/>
-                            <field name="provider_address"/>
-                            <field name="provider_phone"/>
+                            <group>
+                                <field name="provider"/>
+                                <field name="pic_phone"/>
+                            </group>
+                            <group>
+                                <field name="pic"/>
+                                <field name="provider_address"/>
+                                <field name="provider_phone"/>
+                            </group>
                             <field name="fleet_insurance_ids"/>
                         </group>
                     </sheet>
