@@ -2,13 +2,13 @@ from odoo import models, fields, api
 from datetime import date
 
 
-class FleetAsuransi(models.Model):
-    _name = 'fleet.asuransi'
+class FleetInsurance(models.Model):
+    _name = 'fleet.insurance'
     _description = 'Fleet Vehicle Insurance'
 
     # asuransi_id = fields.Many2one('res.users','Asuransi', required=True)
     
-    insurance_id = fields.Many2one('asuransi')
+    insurance_id = fields.Many2one('insurance')
     fleet_id = fields.Many2one('fleet.vehicle')
     start_date = fields.Date(required=True)
     end_date = fields.Date(required=True)

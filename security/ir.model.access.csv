@@ -1,7 +1,7 @@
 id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
 access_fleet_vehicle_custom,fleet.vehicle access,model_fleet_vehicle,,1,1,1,1
 access_fleet_vehicle_model_custom,fleet.vehicle.model access,model_fleet_vehicle_model,,1,1,1,1
-access_fleet_asuransi,fleet.asuransi access,model_fleet_asuransi,,1,1,1,1
-access_asuransi,asuransi access,model_asuransi,,1,1,1,1
+access_fleet_insurance,fleet.insurance access,model_fleet_insurance,,1,1,1,1
+access_insurance,insurance access,model_insurance,,1,1,1,1
 access_fleet_status_physical,fleet.status_physical access,model_fleet_status_physical,,1,1,1,1
 access_fleet_status_unit,fleet.status_unit access,model_fleet_status_unit,,1,1,1,1

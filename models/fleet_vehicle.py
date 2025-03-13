@@ -15,7 +15,7 @@ class FleetVehicle(models.Model):
         store=True, 
         readonly=False
     )
-    fleet_insurance_id = fields.One2many('fleet.asuransi', 'fleet_id')
+    fleet_insurance_id = fields.One2many('fleet.insurance', 'fleet_id')
     type = fields.Char(string="Type")
     OTR = fields.Monetary(string="OTR")
     active = fields.Boolean()

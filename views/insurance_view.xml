@@ -2,22 +2,22 @@
     <data>
 
         <!-- Action -->
-        <record id="action_asuransi" model="ir.actions.act_window">
+        <record id="action_insurance" model="ir.actions.act_window">
             <field name="name">Insurance</field>
-            <field name="res_model">asuransi</field>
+            <field name="res_model">insurance</field>
             <field name="view_mode">tree,form</field>
         </record>
 
-        <record id="menu_asuransi" model="ir.ui.menu">
+        <record id="menu_insurance" model="ir.ui.menu">
             <field name="name">Insurance</field>
             <field name="parent_id" ref="fleet.menu_root"/>
-            <field name="action" ref="action_asuransi"/>
+            <field name="action" ref="action_insurance"/>
         </record>
 
          <!-- Tree View -->
-        <record id="view_asuransi_tree" model="ir.ui.view">
-            <field name="name">asuransi.tree</field>
-            <field name="model">asuransi</field>
+        <record id="view_insurance_tree" model="ir.ui.view">
+            <field name="name">insurance.tree</field>
+            <field name="model">insurance</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="provider"/>
@@ -26,9 +26,9 @@
         </record>
 
          <!-- Form View -->
-        <record id="view_asuransi_form" model="ir.ui.view">
-            <field name="name">asuransi.form</field>
-            <field name="model">asuransi</field>
+        <record id="view_insurance_form" model="ir.ui.view">
+            <field name="name">insurance.form</field>
+            <field name="model">insurance</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet>
@@ -48,6 +48,5 @@
                 </form>
             </field>
         </record>
-
     </data>
 </odoo>

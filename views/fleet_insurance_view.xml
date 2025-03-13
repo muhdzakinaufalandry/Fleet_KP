@@ -3,9 +3,9 @@
 
         
         <!-- Action -->
-        <record id="action_fleet_asuransi" model="ir.actions.act_window">
+        <record id="action_fleet_insurance" model="ir.actions.act_window">
             <field name="name">Insurance</field>
-            <field name="res_model">fleet.asuransi</field>
+            <field name="res_model">fleet.insurance</field>
             <field name="view_mode">tree,form</field>
         </record>
 
@@ -17,9 +17,9 @@
 
 
          <!-- Tree View -->
-        <record id="view_fleet_asuransi_tree" model="ir.ui.view">
-            <field name="name">fleet.asuransi.tree</field>
-            <field name="model">fleet.asuransi</field>
+        <record id="view_fleet_insurance_tree" model="ir.ui.view">
+            <field name="name">fleet.insurance.tree</field>
+            <field name="model">fleet.insurance</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="fleet_id"/>
@@ -31,9 +31,9 @@
         </record>
 
          <!-- Form View -->
-        <record id="view_fleet_asuransi_form" model="ir.ui.view">
-            <field name="name">fleet.asuransi.form</field>
-            <field name="model">fleet.asuransi</field>
+        <record id="view_fleet_insurance_form" model="ir.ui.view">
+            <field name="name">fleet.insurance.form</field>
+            <field name="model">fleet.insurance</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet>
@@ -46,7 +46,5 @@
                 </form>
             </field>
         </record>
-
-        
     </data>
 </odoo>
